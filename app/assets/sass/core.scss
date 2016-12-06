@@ -31,7 +31,7 @@ ul {
 h2 {
 		font-size: 2rem;
 		margin: $size-small 0;
-}
+	}
 
 a {
 		display: inline-block;
@@ -40,11 +40,32 @@ a {
 		color: #fff;
 		text-align: center;
 }
+
 a:hover {
 	text-decoration: none;
 	background-color: #b01e1a;
 	color: #fff;
 }
-.reset-left{
+
+//generic classe
+.reset{
+		padding: $reset;
+}
+
+.reset-side{
 		padding-left: $reset;
+		@media(max-width:48em){
+			padding-right: $reset;
+			padding-left: $reset;
+		}
+}
+
+.overlay-text-x-large{
+	width: 50%;
+	font-size: 4em;
+}
+
+.overlay-text-large{
+	width: 50%;
+	font-size: 3em;
 }

@@ -1,13 +1,11 @@
 <script id="output-results" type="text/x-handlebars-template">
 
-    <section class="output__item--wrap col-xs-12 col-sm-12 col-md-12" tabindex="0">
-      <div class="col-xs-12 col-sm-8 col-md-8 reset-left">
-
+  <section class="output__item--wrap col-xs-12 col-sm-12 col-md-12" tabindex="0">
+    <div class="col-xs-12 col-sm-12 col-md-8 reset-side">
       \{{#main}}
-        <article class="output__item" style="background-image:url(\{{ concat imageUrl }});
-        background-repeat: no-repeat;  min-height:50em; background-size:cover; background-position:-20em;">
+        <article class="output__item output__bg__resize" style="background-image:url(\{{ concat imageUrl }});">
           <div class="output__item--text">
-            <h2 class="output__item--text-wrap-big">
+            <h2 class="overlay-text-x-large">
               <span class="output__item--text-multiline">\{{headlineText}}</span>
             </h2>
             <a class="text-uppercase h4" href=\{{ concat cta.link }}>\{{ cta.text }}</a>
@@ -16,12 +14,12 @@
       \{{/main}}
     </div>
 
-      <div class="col-xs-12 col-sm-4 col-md-4" style="padding:0;">
+    <div class="col-xs-12 col-sm-12 col-md-4 reset">
+
       \{{#side_top}}
-        <article class="output__item" style="background-image:url(\{{ concat imageUrl }});
-        background-repeat: no-repeat; min-height:24.5em; background-size:cover;">
+        <article class="output__item output__bg__resize output__bg__resize-side" style="background-image:url(\{{ concat imageUrl }});">
           <div class="output__item--text">
-            <h2 class="output__item--text-wrap-small">
+            <h2 class="overlay-text-large">
               <span class="output__item--text-multiline">\{{headlineText}}</span>
             </h2>
             <a class="text-uppercase h4" href=\{{ concat cta.link }}>\{{ cta.text }}</a>
@@ -30,10 +28,9 @@
       \{{/side_top}}
 
       \{{#side_bottom}}
-        <article class="output__item" style="background-image:url(\{{ concat imageUrl }});
-        background-repeat: no-repeat;min-height:25em; background-size:cover;">
+        <article class="output__item output__bg__resize output__bg__resize-side" style="background-image:url(\{{ concat imageUrl }});">
           <div class="output__item--text">
-            <h2 class="output__item--text-wrap-small">
+            <h2 class="overlay-text-large">
               <span class="output__item--text-multiline">\{{headlineText}}</span>
             </h2>
             <a class="text-uppercase h4" href=\{{ concat cta.link }}>\{{ cta.text }}</a>
@@ -41,7 +38,6 @@
         </article>
       \{{/side_bottom}}
     </div>
-    </section>
-
+  </section>
 </script>
 <section class="output row" id="content" style="background-color:#fff;"></section>

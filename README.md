@@ -1,4 +1,3 @@
-# bbc-test
 ##To checkout
 * git clone git@github.com:jijo78/stc-frontend.git
 

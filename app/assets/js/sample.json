@@ -1,0 +1,32 @@
+{
+	"heroList": {
+		"heroItems": [
+			{
+				"imageUrl": "/sites/default/files/images/syria_appeal_RS119019_save_the_children_main_page.jpg",
+				"headlineText": "SYRIAN CHILDREN NEED YOU",
+				"cta": {
+					"link": "/about-us/emergencies/syria-appeal",
+					"text": "DONATE NOW"
+				}
+			},
+			{
+				"imageUrl": "/sites/default/files/images/RS121011_rayan_740360.jpg",
+				"headlineText": "PROTECT IRAQ'S CHILDREN",
+				"cta": {
+					"link": "/about-us/emergencies/iraq-crisis",
+					"text": "ACT NOW"
+				}
+			},
+			{
+				"imageUrl": "/sites/default/files/images/Mina_resized740360.jpg",
+				"headlineText": "NO GIRL IS PROPERTY",
+				"cta": {
+					"link": "/everylastgirl",
+					"text": "HELP SET THEM FREE"
+				}
+			}
+		]
+	},
+	"baseSite": "http://www.savethechildren.org.uk",
+	"numArticles": 3
+}

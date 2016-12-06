@@ -1,0 +1,50 @@
+//variables
+$light-blue: rgba(0, 115, 197, 1);
+$medium-blue: rgba(51, 122, 183, 1);
+$size-small: 8px;
+$size-large: 16px;
+$reset: 0;
+
+@import "output";
+
+*{
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  background-color: #ccc;
+  text-align: center;
+}
+
+ul {
+	margin: $reset;
+	padding: $reset;
+	list-style-type: none;
+	text-align: left;
+}
+
+h2 {
+		font-size: 2rem;
+		margin: $size-small 0;
+}
+
+a {
+		display: inline-block;
+		background-color: #d72b26;
+		padding: $size-large+$size-small;
+		color: #fff;
+		text-align: center;
+}
+a:hover {
+	text-decoration: none;
+	background-color: #b01e1a;
+	color: #fff;
+}
+.reset-left{
+		padding-left: $reset;
+}

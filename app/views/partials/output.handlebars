@@ -1,0 +1,47 @@
+<script id="output-results" type="text/x-handlebars-template">
+
+    <section class="output__item--wrap col-xs-12 col-sm-12 col-md-12" tabindex="0">
+      <div class="col-xs-12 col-sm-8 col-md-8 reset-left">
+
+      \{{#main}}
+        <article class="output__item" style="background-image:url(\{{ concat imageUrl }});
+        background-repeat: no-repeat;  min-height:50em; background-size:cover; background-position:-20em;">
+          <div class="output__item--text">
+            <h2 class="output__item--text-wrap-big">
+              <span class="output__item--text-multiline">\{{headlineText}}</span>
+            </h2>
+            <a class="text-uppercase h4" href=\{{ concat cta.link }}>\{{ cta.text }}</a>
+          </div>
+        </article>
+      \{{/main}}
+    </div>
+
+      <div class="col-xs-12 col-sm-4 col-md-4" style="padding:0;">
+      \{{#side_top}}
+        <article class="output__item" style="background-image:url(\{{ concat imageUrl }});
+        background-repeat: no-repeat; min-height:24.5em; background-size:cover;">
+          <div class="output__item--text">
+            <h2 class="output__item--text-wrap-small">
+              <span class="output__item--text-multiline">\{{headlineText}}</span>
+            </h2>
+            <a class="text-uppercase h4" href=\{{ concat cta.link }}>\{{ cta.text }}</a>
+          </div>
+        </article>
+      \{{/side_top}}
+
+      \{{#side_bottom}}
+        <article class="output__item" style="background-image:url(\{{ concat imageUrl }});
+        background-repeat: no-repeat;min-height:25em; background-size:cover;">
+          <div class="output__item--text">
+            <h2 class="output__item--text-wrap-small">
+              <span class="output__item--text-multiline">\{{headlineText}}</span>
+            </h2>
+            <a class="text-uppercase h4" href=\{{ concat cta.link }}>\{{ cta.text }}</a>
+          </div>
+        </article>
+      \{{/side_bottom}}
+    </div>
+    </section>
+
+</script>
+<section class="output row" id="content" style="background-color:#fff;"></section>

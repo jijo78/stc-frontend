@@ -1,0 +1,28 @@
+.output{
+  .output__item{
+    margin: $size-small $reset;
+    display: flex;
+    color: #fff;
+
+    .output__item--text{
+      text-align: left;
+      padding: $size-small;
+      .output__item--text-wrap-big{
+        width:50%;
+        font-size:4em;
+      }
+      .output__item--text-wrap-small{
+        font-size:3em;
+      }
+      .output__item--text-multiline{
+        display: inline;
+        background: #fff;
+        box-shadow: 10px 0 0  #fff, -10px 0 0  #fff;
+        //@see https://developer.mozilla.org/en-US/docs/Web/CSS/box-decoration-break
+        -webkit-box-decoration-break: clone;
+        -ms-box-decoration-break: clone;
+        box-decoration-break: clone; color:#000;
+      }
+    }
+  }
+}
